@@ -488,6 +488,10 @@ img.star:hover {
   margin-top: 35px;
 }
 
+.subscriber-form label.error {
+  font-size: 10px;
+}
+
 .subscriber-form input {
   font-family: 'DM Mono', serif;
   font-weight: 300;
@@ -525,7 +529,8 @@ input:-webkit-autofill:focus {
   border-bottom: 1px solid #ff6d38;
 }
 
-.subscriber-form input[type='submit'] {
+.subscriber-form button[type='submit'] {
+  position: relative;
   cursor: url('images/cursor-link.png') 16 16, auto;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
@@ -540,6 +545,40 @@ input:-webkit-autofill:focus {
   padding-right: 25px;
 }
 
+.button__text {
+  color: #252525;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  color: #d5e1e1;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #252525;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
 
 .scroll-section.nav-section.sticky {
   position: fixed;
