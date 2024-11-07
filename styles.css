@@ -179,6 +179,10 @@
   }
 }
 
+.container .container {
+  width: 100%;
+}
+
 @media only screen and (min-width: 80em) {
   /* 960px */
   .container {
@@ -276,6 +280,10 @@ h1 {
 
 .grey-color {
   color: #5b4040;
+}
+
+.light-green-color {
+  color: #ECF757;
 }
 
 .blur {
@@ -451,25 +459,175 @@ img.star:hover {
   background-image: url( 'images/section-one-bg.svg' );
 }
 
-.scroll-section.two {
+.scroll-section.intro-1 {
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+
+.scroll-section.intro-2 {
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #D5E1E1;
+}
+
+.scroll-section.intro-3 {
+  min-height: 60vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #381B3F;
+}
+
+.scroll-section.connect {
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.founder-wrapper {
+  padding-top: 25px;
+}
+
+.circular--portrait {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.circular--portrait img.portrait {
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+  margin-bottom: -10px;
+}
+
+.founder-wrapper .unicorn {
+  animation: rotate360 30.1s linear infinite;
+  position: absolute;
+  top: 12%;
+  left: 0;
+  z-index: 1;
+  width: 4vh;
+}
+
+.portrait-co-founder {
+  position: relative;
+}
+
+.portrait-co-founder .unicorn {
+  width: 3vh;
+  bottom: 20%;
+  right: 0;
+  left: auto;
+  top: auto;
+}
+
+.founder-details {
+  padding: 20px;
+  color: #252525;
+}
+
+.founder-details div {
+  padding-top: 10px;
+}
+
+.founder-details .name {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+
+.founder-details .title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 140.909% */
+  letter-spacing: -0.22px;
+}
+
+.founder-details a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 193.75% */
+  letter-spacing: -0.16px;
+}
+
+.scroll-section.connect .text-with-arrow {
+  border-bottom: 1px solid rgba(37, 37, 37, 0.50);
+  padding-bottom: 20px;
+  color: #252525;
+}
+
+.scroll-section.intro-txt {
+  padding-left: calc((100% - 1024px) / 2);
+  padding-right: calc((100% - 1024px) / 2);
+}
+
+p.extra-large {
+  font-size: clamp(40px, 4cqi, 65px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 71px; /* 98.611% */
+  letter-spacing: -0.413px;
+}
+
+p.large {
+  text-align: center;
+  font-size: clamp(0.5rem, 4cqi, 35px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 105.556% */
+  letter-spacing: -0.72px;
+}
+
+p.small {
+  color: #252525;
+  text-align: center;
+  font-size: clamp(0.5rem, 4cqi, 22px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 172.727% */
+  letter-spacing: -0.22px;
+}
+
+.scroll-section.intro-1 p {
+  color: #ffffff;
+}
+
+.intro-1 .text-arrow-wrapper {
+  text-align: center;
+}
+
+.scroll-section.join {
   background-color: #1b1464;
-  background-image: url('images/section-two-bg.svg');
+  background-image: url('images/section-join-bg.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-top: 88px;
   padding-bottom: 88px;
 }
 
-.scroll-section.three {
+.scroll-section.features {
   background-color: #f79cff;
-  background-image: url('images/section-three-bg.svg');
+  background-image: url('images/section-features-bg.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-top: 88px;
   padding-bottom: 88px;
 }
 
-.scroll-section.four {
+.scroll-section.footer {
   background-color: #252525;
   display: flex;
   justify-content: center;
@@ -647,6 +805,27 @@ input:-webkit-autofill:focus {
   .social-links ul li {
     display: inline-block;
     margin-right: 20px;
+  }
+
+  .scroll-section.connect {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .founder-wrapper {
+    text-align: center;
+  }
+
+  .founder-wrapper .unicorn {
+    width: 7vh;
+  }
+
+  .portrait-co-founder {
+    position: relative;
+  }
+
+  .portrait-co-founder .unicorn {
+    width: 6vh;
   }
 }
 
