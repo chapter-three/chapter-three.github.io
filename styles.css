@@ -556,11 +556,30 @@ img.star:hover {
 
 .founder-details a {
   text-decoration: none;
+  position: relative;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 31px; /* 193.75% */
   letter-spacing: -0.16px;
+}
+
+.founder-details a:before {
+  content: '';
+  border-bottom: solid 1px #ffffff;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+}
+
+.founder-details a:hover:before {
+  border-bottom: solid 1px #ff6d38;
+}
+
+.founder-details a:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 
