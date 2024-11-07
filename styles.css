@@ -512,7 +512,7 @@ img.star:hover {
   animation: rotate360 30.1s linear infinite;
   position: absolute;
   top: 12%;
-  left: 0;
+  left: 2%;
   z-index: 1;
   width: 4vh;
 }
