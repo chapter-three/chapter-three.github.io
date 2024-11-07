@@ -771,6 +771,8 @@ input:-webkit-autofill:focus {
 
 .scroll-section.nav-section.sticky {
   position: fixed;
+  background-color: rgb(213 225 225 / 87%);
+  backdrop-filter: blur(10px);
   width: 100%;
   top: 0;
   margin-top: 0;
